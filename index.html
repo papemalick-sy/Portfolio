@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Pape Malick Sy | Portfolio</title>
+
+  <meta
+    name="description"
+    content="Portfolio de Pape Malick Sy, étudiant en L3 Développement et Administration d’Applications à l’Université Alioune Diop de Bambey."
+  >
+
+  <meta property="og:title" content="Pape Malick Sy | Portfolio">
+  <meta property="og:description" content="Étudiant en développement informatique à la recherche d’un premier stage.">
+  <meta property="og:type" content="website">
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%3C/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- Icônes SVG réutilisables -->
+  <svg class="svg-sprite" aria-hidden="true">
+    <symbol id="icon-whatsapp" viewBox="0 0 24 24">
+      <path d="M20.5 3.5A11.8 11.8 0 0 0 12.1 0C5.6 0 .3 5.3.3 11.8c0 2.1.5 4.1 1.6 5.9L.2 24l6.5-1.7c1.7.9 3.5 1.3 5.4 1.3h.1c6.5 0 11.8-5.3 11.8-11.8 0-3.1-1.2-6.1-3.5-8.3ZM12.1 21.6c-1.7 0-3.4-.5-4.9-1.3l-.4-.2-3.8 1 1-3.7-.2-.4a9.8 9.8 0 1 1 8.3 4.6Zm5.4-7.3c-.3-.2-1.8-.9-2.1-1-.3-.1-.5-.2-.7.2-.2.3-.8 1-1 1.2-.2.2-.4.2-.7.1-1.7-.8-2.8-1.5-3.9-3.4-.3-.5.3-.5.8-1.6.1-.2.1-.4 0-.6-.1-.2-.7-1.7-.9-2.3-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4-.3.3-1.1 1.1-1.1 2.6 0 1.5 1.1 3 1.2 3.2.1.2 2.2 3.4 5.4 4.8.8.3 1.4.6 1.9.7.8.3 1.5.2 2.1.1.7-.1 1.8-.7 2-1.4.3-.7.3-1.3.2-1.4-.1-.2-.3-.3-.6-.4Z"/>
+    </symbol>
+
+    <symbol id="icon-github" viewBox="0 0 24 24">
+      <path d="M12 .5A12 12 0 0 0 8.2 23.9c.6.1.8-.3.8-.6v-2.2c-3.3.7-4-1.4-4-1.4-.5-1.4-1.3-1.8-1.3-1.8-1.1-.8.1-.8.1-.8 1.2.1 1.8 1.2 1.8 1.2 1.1 1.8 2.9 1.3 3.6 1 .1-.8.4-1.3.8-1.6-2.7-.3-5.5-1.3-5.5-5.9 0-1.3.5-2.4 1.2-3.2-.1-.3-.5-1.6.1-3.2 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0C16.5 6 17.5 6.3 17.5 6.3c.6 1.6.2 2.9.1 3.2.8.9 1.2 1.9 1.2 3.2 0 4.6-2.8 5.6-5.5 5.9.4.4.8 1.1.8 2.2v2.5c0 .3.2.7.8.6A12 12 0 0 0 12 .5Z"/>
+    </symbol>
+  </svg>
+
+  <header class="site-header">
+    <nav class="navbar container" aria-label="Navigation principale">
+      <a href="#accueil" class="brand">
+        <span class="brand-mark">&lt;/&gt;</span>
+        <span>Pape Malick Sy</span>
+      </a>
+
+      <div class="nav-actions">
+        <button
+          class="theme-toggle"
+          type="button"
+          aria-label="Activer le mode sombre"
+          aria-pressed="false"
+        >
+          <span class="sun-icon">☀</span>
+          <span class="moon-icon">☾</span>
+        </button>
+
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-label="Ouvrir le menu"
+          aria-expanded="false"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+
+      <div class="nav-menu">
+        <a href="#accueil">Accueil</a>
+        <a href="#apropos">À propos</a>
+        <a href="#formation">Formation</a>
+        <a href="#competences">Compétences</a>
+        <a href="#parcours">Parcours</a>
+        <a href="#objectif">Objectif</a>
+        <a href="#contact">Contact</a>
+        <a href="#contact" class="nav-cta">Me contacter <span>↗</span></a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section id="accueil" class="hero section">
+      <div class="hero-grid"></div>
+      <div class="code-decoration code-one">&lt;developpeur /&gt;</div>
+      <div class="code-decoration code-two">{ apprendre: true }</div>
+
+      <div class="container hero-content">
+        <div class="hero-copy reveal">
+          <div class="eyebrow availability">
+            <span class="status-dot"></span>
+            Disponible pour une opportunité de stage
+          </div>
+
+          <p class="hero-kicker">Bonjour, je suis</p>
+
+          <h1>Pape Malick <span>Sy</span></h1>
+
+          <h2>
+            Étudiant en L3 Développement<br>
+            et Administration d’Applications
+          </h2>
+
+          <p class="hero-location">
+            Université Alioune Diop de Bambey <span>—</span> Sénégal
+          </p>
+
+          <p class="hero-description">
+            Étudiant en L3 Développement et Administration d’Applications,
+            passionné par le développement web et logiciel, je recherche un
+            stage afin de mettre mes compétences en pratique, développer mon
+            expérience professionnelle et contribuer à des projets concrets.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#apropos" class="btn btn-primary">
+              Découvrir mon profil <span>↗</span>
+            </a>
+
+            <a
+              href="PAPE MALICK.pdf"
+              class="btn btn-secondary"
+              download
+            >
+              Télécharger mon CV <span>↓</span>
+            </a>
+
+            <a href="#contact" class="btn btn-link">
+              Me contacter <span>→</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal">
+          <div class="orb orb-large"></div>
+          <div class="orb orb-small"></div>
+
+       <div class="profile-frame">
+        <img
+          src="image.jpeg"
+          alt="Photo de profil de Pape Malick Sy"
+         class="profile-image"
+        >
+      </div>
+
+          <div class="floating-card card-top">
+            <span class="mini-icon">&lt;/&gt;</span>
+            <div>
+              <strong>En apprentissage</strong>
+              <small>Développement web</small>
+            </div>
+          </div>
+
+          <div class="floating-card card-bottom">
+            <span class="mini-icon">✦</span>
+            <div>
+              <strong>Objectif</strong>
+              <small>Première expérience</small>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-scroll">
+        <span></span>
+        Faire défiler
+      </div>
+    </section>
+
+    <!-- À PROPOS -->
+    <section id="apropos" class="section section-light">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">01 / À PROPOS</p>
+          <h2>
+            Construire progressivement<br>
+            <span>mon avenir dans la tech.</span>
+          </h2>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-intro reveal">
+            <p class="lead">
+              Je suis étudiant en Licence 3 Développement et Administration
+              d’Applications à l’Université Alioune Diop de Bambey.
+            </p>
+
+            <p>
+              Je m’intéresse au développement web, au développement logiciel
+              et aux bases de données. Ma formation me permet de développer
+              progressivement mes connaissances en programmation, en conception
+              d’applications et en gestion de données.
+            </p>
+
+            <p>
+              Je recherche aujourd’hui mon premier stage en développement
+              informatique afin de mettre en pratique mes connaissances,
+              progresser techniquement, découvrir le fonctionnement d’une équipe
+              professionnelle et contribuer progressivement à des projets concrets.
+            </p>
+          </div>
+
+          <div class="about-note reveal">
+            <span class="quote-mark">“</span>
+            <blockquote>
+              Je ne prétends pas tout maîtriser. Je souhaite justement profiter
+              d’une première expérience professionnelle pour apprendre, progresser
+              et transformer mes connaissances en compétences pratiques.
+            </blockquote>
+            <div class="note-line"></div>
+            <small>Motivation personnelle</small>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FORMATION -->
+    <section id="formation" class="section">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">02 / FORMATION</p>
+          <h2>
+            Un parcours orienté vers<br>
+            <span>le développement d’applications.</span>
+          </h2>
+        </div>
+
+        <div class="timeline">
+          <article class="timeline-item reveal">
+            <div class="timeline-marker">01</div>
+
+            <div class="timeline-content">
+              <span class="timeline-label">Formation actuelle</span>
+              <h3>Licence — Développement et Administration d’Applications</h3>
+              <p>Université Alioune Diop de Bambey — Sénégal</p>
+
+              <div class="timeline-meta">
+                <span>Niveau : L3</span>
+                <span>Année universitaire : 2026-2027</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="timeline-item timeline-placeholder reveal">
+            <div class="timeline-marker">+</div>
+
+            <div class="timeline-content">
+              <span class="timeline-label">CE QUE JE PEUX APPORTER</span>
+              <h3>Esprit d’équipe
+               L’envie de découvrir le travail en équipe et de contribuer progressivement à des projets concrets.
+             </h3>
+              <p>
+                 Capacité d’apprentissage
+                 Je suis prêt à apprendre de nouvelles technologies et méthodes de travail.
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- COMPÉTENCES -->
+    <section id="competences" class="section section-dark">
+      <div class="container">
+        <div class="section-heading heading-dark reveal">
+          <p class="eyebrow">03 / COMPÉTENCES</p>
+
+          <h2>
+            Des bases solides,<br>
+            <span>un apprentissage continu.</span>
+          </h2>
+
+          <p>
+            Mes connaissances sont issues de ma formation et de mon apprentissage progressif.
+          </p>
+        </div>
+
+        <div class="skills-grid">
+          <article class="skill-card reveal">
+            <div class="skill-number">01</div>
+            <div class="skill-icon">&lt;/&gt;</div>
+            <h3>Développement web</h3>
+
+            <div class="tag-list">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+              <span>PHP</span>
+            </div>
+
+            <p>
+              Notions et bases acquises dans la création de pages et d’interfaces web.
+            </p>
+          </article>
+
+          <article class="skill-card reveal">
+            <div class="skill-number">02</div>
+            <div class="skill-icon">{ }</div>
+            <h3>Programmation</h3>
+
+            <div class="tag-list">
+              <span>Java</span>
+              <span>Langage C</span>
+            </div>
+
+            <p>
+              Connaissances en logique, algorithmique et programmation.
+            </p>
+          </article>
+
+          <article class="skill-card reveal">
+            <div class="skill-number">03</div>
+            <div class="skill-icon">⌘</div>
+            <h3>Bases de données</h3>
+
+            <div class="tag-list">
+              <span>SQL</span>
+              <span>MySQL</span>
+              <span>PostgreSQL</span>
+            </div>
+
+            <p>
+              Connaissances en bases de données relationnelles et requêtes SQL.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- BASES DE DONNÉES -->
+    <section id="bases-de-donnees" class="section database-section">
+      <div class="container database-grid">
+        <div class="section-heading reveal">
+          <p class="eyebrow">04 / BASES DE DONNÉES</p>
+
+          <h2>
+            Comprendre les données,<br>
+            <span>structurer l’information.</span>
+          </h2>
+
+          <p>
+            Les bases de données constituent un domaine important de ma formation
+            en développement et administration d’applications.
+          </p>
+        </div>
+
+        <div class="database-list reveal">
+          <div class="database-item">
+            <span>01</span>
+            Bases de données relationnelles
+          </div>
+
+          <div class="database-item">
+            <span>02</span>
+            Tables et relations entre tables
+          </div>
+
+          <div class="database-item">
+            <span>03</span>
+            Clés primaires et clés étrangères
+          </div>
+
+          <div class="database-item">
+            <span>04</span>
+            Requêtes SQL et opérations CRUD
+          </div>
+
+          <div class="database-item">
+            <span>05</span>
+            Jointures, MySQL et PostgreSQL
+          </div>
+
+          <div class="database-item">
+            <span>06</span>
+            Notions de conception de bases de données
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PARCOURS -->
+    <section id="parcours" class="section section-light">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">05 / PARCOURS</p>
+
+          <h2>
+            Ce que je souhaite<br>
+            <span>mettre en pratique.</span>
+          </h2>
+        </div>
+
+        <div class="practice-grid">
+          <article class="practice-card reveal">
+            <span class="practice-icon">01</span>
+            <h3>Développement web</h3>
+            <p>
+              Mettre en pratique HTML, CSS, JavaScript et PHP dans des projets concrets.
+            </p>
+          </article>
+
+          <article class="practice-card reveal">
+            <span class="practice-icon">02</span>
+            <h3>Développement logiciel</h3>
+            <p>
+              Approfondir mes connaissances en programmation et conception d’applications.
+            </p>
+          </article>
+
+          <article class="practice-card reveal">
+            <span class="practice-icon">03</span>
+            <h3>Bases de données</h3>
+            <p>
+              Mettre en pratique SQL, MySQL et PostgreSQL.
+            </p>
+          </article>
+
+          <article class="practice-card reveal">
+            <span class="practice-icon">04</span>
+            <h3>Applications de gestion</h3>
+            <p>
+              Découvrir progressivement la conception d’applications connectées à des bases de données.
+            </p>
+          </article>
+
+          <article class="practice-card reveal">
+            <span class="practice-icon">05</span>
+            <h3>Travail en équipe</h3>
+            <p>
+              Découvrir les méthodes de travail d’une équipe informatique professionnelle.
+            </p>
+          </article>
+        </div>
+
+        <div class="future-projects reveal">
+          <div>
+            <p class="eyebrow">ESPACE PRÉVU POUR PLUS TARD</p>
+            <h3>Mes futurs projets</h3>
+          </div>
+
+          <p>
+            Cette section évoluera progressivement avec les projets que je
+            réaliserai durant mon parcours universitaire et mon apprentissage personnel.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- OPPORTUNITÉ -->
+    <section class="section opportunity-section">
+      <div class="container">
+        <div class="opportunity-box reveal">
+          <div>
+            <p class="eyebrow">06 / OPPORTUNITÉ</p>
+
+            <h2>
+              Pourquoi me donner<br>
+              <span>une opportunité ?</span>
+            </h2>
+          </div>
+
+          <div class="opportunity-content">
+            <p>
+              Je suis motivé, curieux et désireux d’apprendre. Je souhaite
+              progresser techniquement, travailler en équipe et mettre en pratique
+              les connaissances acquises durant ma formation.
+            </p>
+
+            <div class="qualities">
+              <span>Motivation</span>
+              <span>Curiosité</span>
+              <span>Sérieux</span>
+              <span>Volonté d’apprendre</span>
+              <span>Esprit d’équipe</span>
+              <span>Progression</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- OBJECTIF -->
+    <section id="objectif" class="section objective-section">
+      <div class="container">
+        <div class="objective-box reveal">
+          <p class="eyebrow">07 / OBJECTIF DE STAGE</p>
+
+          <h2>
+            À la recherche de ma<br>
+            <span>première expérience professionnelle.</span>
+          </h2>
+
+          <p class="objective-text">
+            Actuellement étudiant en L3 Développement et Administration
+            d’Applications, je souhaite effectuer mon premier stage en
+            développement informatique. Cette expérience représente pour moi une
+            opportunité de mettre en pratique les connaissances acquises durant
+            ma formation, d’apprendre auprès de professionnels et de participer
+            progressivement à des projets concrets.
+          </p>
+
+          <div class="objective-words">
+            <span>APPRENDRE</span>
+            <span>PROGRESSER</span>
+            <span>COLLABORER</span>
+            <span>CONTRIBUER</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section contact-section">
+      <div class="container">
+        <div class="contact-header reveal">
+          <p class="eyebrow">08 / CONTACT</p>
+
+          <h2>
+            Construisons le prochain<br>
+            <span>chapitre ensemble.</span>
+          </h2>
+
+          <p>
+            Je suis disponible pour échanger au sujet d’une opportunité de stage
+            en développement informatique.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <a class="contact-card reveal" href="mailto:[MON EMAIL]">
+            <span class="contact-icon email-icon">✉</span>
+            <small>Email</small>
+            <strong>sypapemalick1@gmail.com</strong>
+            <span class="contact-arrow">↗</span>
+          </a>
+
+          <a
+            class="contact-card reveal"
+            href="https://wa.me/221776813461"
+            target="_blank"
+            rel="noopener"
+          >
+            <span class="contact-icon whatsapp-icon">
+              <svg aria-hidden="true">
+                <use href="#icon-whatsapp"></use>
+              </svg>
+            </span>
+            <small>WhatsApp</small>
+            <strong>77 681 34 61</strong>
+            <span class="contact-arrow">↗</span>
+          </a>
+
+          <a
+            class="contact-card reveal"
+            href="https://www.linkedin.com/in/pape-malick-sy-29a815411"
+            target="_blank"
+            rel="noopener"
+          >
+            <span class="contact-icon linkedin-icon">in</span>
+            <small>LinkedIn</small>
+            <strong>Voir mon profil</strong>
+            <span class="contact-arrow">↗</span>
+          </a>
+
+          <a
+            class="contact-card reveal"
+            href="https://github.com/papemalick-sy"
+            target="_blank"
+            rel="noopener"
+          >
+            <span class="contact-icon github-icon">
+              <svg aria-hidden="true">
+                <use href="#icon-github"></use>
+              </svg>
+            </span>
+            <small>GitHub</small>
+            <strong>Voir mon profil</strong>
+            <span class="contact-arrow">↗</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-main">
+      <div>
+        <a href="#accueil" class="brand">
+          <span class="brand-mark">&lt;/&gt;</span>
+          <span>Pape Malick Sy</span>
+        </a>
+
+        <p>
+          Étudiant en L3 Développement et Administration d’Applications
+        </p>
+      </div>
+
+      <div class="footer-socials">
+        <a
+          href="https://wa.me/221776813461"
+          target="_blank"
+          rel="noopener"
+          aria-label="WhatsApp"
+          class="whatsapp-social"
+        >
+          <svg aria-hidden="true">
+            <use href="#icon-whatsapp"></use>
+          </svg>
+        </a>
+
+        <a
+          href="https://www.linkedin.com/in/pape-malick-sy-29a815411"
+          target="_blank"
+          rel="noopener"
+          aria-label="LinkedIn"
+        >
+          <span>in</span>
+        </a>
+
+        <a
+          href="https://github.com/papemalick-sy"
+          target="_blank"
+          rel="noopener"
+          aria-label="GitHub"
+          class="github-social"
+        >
+          <svg aria-hidden="true">
+            <use href="#icon-github"></use>
+          </svg>
+        </a>
+
+        <a href="mailto:sypapemalick1@gmail.com" aria-label="Email">
+          <span>✉</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <span>
+        © <span id="current-year">2026</span> Pape Malick Sy — Portfolio personnel
+      </span>
+
+      <span>Conçu avec HTML, CSS & JavaScript</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
